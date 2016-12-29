@@ -11,5 +11,10 @@
     "bingo"
   ],
   "author": "Zach Knox",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "http": "0.0.0"
+  }
 }

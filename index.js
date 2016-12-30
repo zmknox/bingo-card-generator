@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
+var fs = require('fs');
+var obj = JSON.parse(fs.readFileSync((process.env.ENTRIES || 'cardentries.json'), 'utf8'));
 
 app.set('port', (process.env.PORT || 8000));
 

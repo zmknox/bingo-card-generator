@@ -7,4 +7,7 @@ This project uses NodeJS, make sure you have it, and npm, installed, then you ca
 change the port the webserver runs on by changing an environment variable (useful when
 deploying on Heroku).
 
-Yes I know this project doesn't need Node but it made it easy to work with.
+To customize the generator with your entries, create a file called cardEntries.json in
+the `public/` directory, in the format of cardEntriesEXAMPLE.json.
+
+Yes I know this project probably doesn't need Node but it made it easy to work with.

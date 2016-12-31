@@ -1,3 +1,7 @@
+public/cardEntries.json
+
+# BELOW ARE IGNORES FOR NODEJS
+
 # Logs
 logs
 *.log

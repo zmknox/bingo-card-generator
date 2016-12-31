@@ -5,10 +5,12 @@
 
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="/js/functions.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<center>
-		<h1>Bingo Card Generator</h1>
+		<h1 id="heading" onload="title()">Bingo Card Generator</h1>
 		<br /><br />
 		<table class="bingo-table table table-bordered" id="bingo">
 			<tr>
@@ -48,6 +50,6 @@
 			</tr>
 		</table>
 		<br />
-		<button type="button" class="btn btn-primary">Generate</button>
+		<button type="button" class="btn btn-primary" onclick="generate()">Generate</button>
 	</body>
 </html>

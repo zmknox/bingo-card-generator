@@ -16,9 +16,27 @@ function generate() {
 			for(var i in result.entries) {
 				x++;
 			}
+			var used = [];
+			for(var i = 0; i < x; i++) {
+				used[i] = false;
+			}
 			for(var i = 1; i <= 25; i++) {
 				var element = document.getElementById(i.toString());
-				element.innerHTML = result.entries[i - 1];
+				if(i == 13 && result.freespace) {
+					element.innerHTML = result.freespaceTest;
+				}
+				else{
+					var chosen = true;
+					while(chosen) {
+						var rand = Math.random() * (x - 1) + 1;
+						var placing = Math.round(rand) - 1;
+						if(!used[placing] || result.allowRepeats) {
+							element.innerHTML = result.entries[placing];
+							chosen = false;
+							used[placing] = true;
+						}
+					}
+				}
 			}
     	}
 	});

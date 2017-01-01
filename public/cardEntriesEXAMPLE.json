@@ -1,6 +1,8 @@
 {
 	"name":"name",
 	"freespace":false,
+	"freespaceTest":"free",
+	"allowRepeats":false,
 	"entries":[
 		"1",
 		"2",

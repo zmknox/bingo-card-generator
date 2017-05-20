@@ -1,7 +1,8 @@
 {
 	"name":"name",
+	"imageURL":"http://...",
 	"freespace":false,
-	"freespaceTest":"free",
+	"freespaceTest":"free YOU NEED THIS EVEN IF freespace IS FALSE",
 	"allowRepeats":false,
 	"entries":[
 		"1",
@@ -28,6 +29,10 @@
 		"22",
 		"23",
 		"24",
-		"25"
+		"25",
+		"You can have as many entries as you want",
+		"But if you don't allow repeats, you need at least 25"
 	]
 }
+youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ -o - | CACA_DRIVER=ncurses mplayer -cache 64000 -vo caca -
+

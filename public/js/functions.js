@@ -6,6 +6,10 @@ function title() {
 			element.innerHTML = result.name + " Bingo Card Generator";
 			var freeSpace = document.getElementById("freeSpace");
 			freeSpace.checked = result.freeSpace;
+			if(result.imageURL != "") {
+				var imageElement = document.getElementById("image");
+				imageElement.innerHTML = "<img src=\"" + result.imageURL + "\" alt=\"" + result.name + "\" width=\"600\"></img>"
+			}
 		}
 	});
 }

@@ -4,6 +4,8 @@ function title() {
 		success : function(result){
 			var element = document.getElementById("heading");
 			element.innerHTML = result.name + " Bingo Card Generator";
+			var freeSpace = document.getElementById("freeSpace");
+			freeSpace.checked = result.freeSpace;
 		}
 	});
 }
@@ -20,9 +22,10 @@ function generate() {
 			for(var i = 0; i < x; i++) {
 				used[i] = false;
 			}
+			var freeSpace = document.getElementById("freeSpace");
 			for(var i = 1; i <= 25; i++) {
 				var element = document.getElementById(i.toString());
-				if(i == 13 && result.freespace) {
+				if(i == 13 && freeSpace.checked == true) {
 					element.innerHTML = result.freespaceTest;
 				}
 				else{
